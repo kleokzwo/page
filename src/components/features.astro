@@ -1,69 +1,77 @@
 ---
-// @ts-ignore
-import { Icon } from "astro-icon";
+  // @ts-ignore
+  import { Icon } from "astro-icon";
 
-const features = [
-  {
-    title: "Bring Your Own Framework",
-    description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
-  },
-  {
-    title: "100% Static HTML, No JS",
-    description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
-  },
-  {
-    title: "On-Demand Components",
-    description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
-  },
-  {
-    title: "Broad Integration",
-    description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
-  },
-  {
-    title: "SEO Enabled",
-    description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
-  },
-  {
-    title: "Community",
-    description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
-  },
-];
+  const features = [
+    {
+      title: "Fast",
+      description:
+        "SwiftTX transactions are confirmed in less than a second.",
+      icon: "bi:lightning"
+    },
+    {
+      title: "Decentralized",
+      description:
+        "Anybody with a computer can stake to earn money and contribute to running the blockchain.",
+      icon: "bi:boxes"
+    },
+    {
+      title: "Low Fees",
+      description:
+        "Send money globally for less than a cent.",
+      icon: "bi:currency-exchange"
+    },
+    {
+      title: "Private, untraceable",
+      description:
+        "Transact privately - zBTC2 and Tor.",
+      icon: "bi:eye-slash"
+    },
+    {
+      title: "Energy efficient",
+      description:
+        "Bitcoin 2 uses a unique, secure Proof of Stake algorithm. Greatly reducing electricity use compared to other cryptocurrencies.",
+      icon: "bi:battery-charging"
+    },
+    {
+      title: "Scalable",
+      description:
+        "Max transactions per second 40 times more than Bitcoin.",
+      icon: "bi:arrows-fullscreen"
+    },
+  ];
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
+<div class="mt-16 md:mt-0 hidden">
+  <h2 class="text-3xl lg:text-3xl font-bold lg:tracking-tight">
+    Bitcoin 2 is the result of a decade of improvements to blockchain technology
   </h2>
   <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
+    Bitcoin 2 is a scalable energy efficient cryptocurrency supporting anonymous and instant transactions.<wbr/>
+Open source - Anonymous - Fast - Proof of Stake algorithm.
+  </p>
+  <p class="text-lg mt-4 text-slate-600">
+    At launch, all Bitcoin holders as of February 5 2018 got BTC2 on a 1 for 1 basis.<wbr/>
+The Bitcoin 2 balances, addresses and supply were set to equal those of Bitcoin.<wbr/>
+    <wbr/>
+&#8220;Be part of our Bitcoin 2 Masternode community or simply stake through our Web Wallet!&#8221;<br>
+    <wbr/>
+Long-term goals: In-wallet decentralized exchange, and real world use.
   </p>
 </div>
 
 <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
   {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
+  features.map((item) => (
+  <div class="flex gap-4 items-start">
+    <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+      <Icon class="text-orange-500" name={item.icon} />
+    </div>
+    <div>
+      <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+      <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+    </div>
+  </div>
+  ))
   }
 </div>
